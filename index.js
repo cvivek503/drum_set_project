@@ -29,12 +29,11 @@ document.addEventListener("keypress", function (event) {
 });
 function buttonAnimation(key) {
     var btn = document.querySelector("." + key);
-    var letter = btn.innerHTML;
+   
     btn.classList.add("pressed");
-    btn.innerHTML = "";
+  
     setTimeout(function () {
         btn.classList.remove("pressed");
-        btn.innerHTML = letter;
     }, 400);
 
 
@@ -71,6 +70,34 @@ function makeSound(key) {
             var aud = new Audio('sounds/tom-4.mp3');
             aud.play();
             break;
+          case "W":
+            var aud = new Audio('sounds/crash.mp3');
+            aud.play();
+            break;
+        case "A":
+            var aud = new Audio('sounds/kick-bass.mp3');
+            aud.play();
+            break;
+        case "S":
+            var aud = new Audio('sounds/snare.mp3');
+            aud.play();
+            break;
+        case "D":
+            var aud = new Audio('sounds/tom-1.mp3');
+            aud.play();
+            break;
+        case "J":
+            var aud = new Audio('sounds/tom-2.mp3');
+            aud.play();
+            break;
+        case "K":
+            var aud = new Audio('sounds/tom-3.mp3');
+            aud.play();
+            break;
+        case "L":
+            var aud = new Audio('sounds/tom-4.mp3');
+            aud.play();
+            break;  
         default: console.log("wrong");
             break;
     }
