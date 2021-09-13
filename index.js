@@ -70,7 +70,7 @@ function makeSound(key) {
             var aud = new Audio('sounds/tom-4.mp3');
             aud.play();
             break;
-          case "W":
+        case "W":
             var aud = new Audio('sounds/crash.mp3');
             aud.play();
             break;
